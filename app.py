@@ -193,7 +193,7 @@ def calculate_point_factor(score_difference):
 
 # Function to process the form data and update the database
 
-def process_game_data(player1_name, player2_name, team1_score, player3_name, player4_name, team2_score,date):
+def process_game_data(player1_name, player2_name, team1_score, player3_name, player4_name, team2_score, date):
     # Connect to the database
     conn = psycopg2.connect(
         host=DATABASE_CONFIG['host'],
@@ -1113,7 +1113,7 @@ dash_app.layout = dbc.Container([
             dcc.Dropdown(
                 id='player-dropdown',
                 options=[{'label': player, 'value': player} for player in get_players_full_list()],
-                value=['Matthieu', 'Lazare'],
+                value=['Simo', 'Gigi', 'Mattia', 'Brenno', 'Edo'],
                 multi=True
             ),
             width={"size": 10, "offset": 1},

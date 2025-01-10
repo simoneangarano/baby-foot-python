@@ -52,24 +52,6 @@
     </tr>
 </table>
 <br>
-<!-- Second table -->
-<table>
-    <tr>
-        <th>Players </th>
-        <th>Old Rating</th>
-        <th>Evolution</th>
-        <th>New Rating</th>
-
-    </tr>
-    {% for player in player_rat_bef_and_aft %}
-    <tr>
-        <td>{{ player[1] }}</td>
-        <td style="text-align:center">{{ player[2] }}</td>
-        <td style="text-align:center">{% if player[3] - player[2] > 0 %}+{% endif %}{{ player[3] - player[2] }}</td>
-        <td style="text-align:center">{{ player[3] }}</td>
-      </tr>
-    {% endfor %}
-</table>
 
 
 

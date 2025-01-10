@@ -41,7 +41,7 @@
     </select>
     <!-- Team 1 Score Label -->
     <label for="team1_score" class="score-label">Score</label>
-    <input type="number" id="team1_score" name="team1_score" value="" min="0" max="11" inputmode="numeric">
+    <input type="number" id="team1_score" name="team1_score" value="" min="0" max="10" inputmode="numeric">
     <br>
     <!-- Team 2 Label -->
     <label for="player1_name" class="team-label">Team 2 </label>
@@ -60,7 +60,7 @@
     </select>
     <!-- Team 2 Score Label -->
     <label for="team2_score" class="score-label">Score</label>
-    <input type="number" id="team2_score" name="team2_score" value="" min="0" max="11" inputmode="numeric">
+    <input type="number" id="team2_score" name="team2_score" value="" min="0" max="10" inputmode="numeric">
     <!-- Game Date Label -->
     <label for="game_date" class="date-label">Date</label>
         <input type="date" id="game_date" name="game_date" value="">
@@ -91,9 +91,9 @@
               const team1_score = document.getElementsByName("team1_score")[0].value;
               const team2_score = document.getElementsByName("team2_score")[0].value;
       
-              // Check if the scores are integers between 0 and 11
+              // Check if the scores are integers between 0 and 101
               if (!Number.isInteger(+team1_score) || !Number.isInteger(+team2_score)) {
-                  alert("Scores must be integers between 0 and 11.");
+                  alert("Scores must be integers between 0 and 10.");
                   return false;
               } 
       
@@ -103,21 +103,21 @@
                   return false;
               }
       
-              // Check if the scores are not greater than 11
-              if (team1_score > 11 || team2_score > 11) {
-                  alert("Scores cannot be greater than 11.");
+              // Check if the scores are not greater than 10
+              if (team1_score > 10 || team2_score > 10) {
+                  alert("Scores cannot be greater than 10.");
                   return false;
               }
 
-              // Check if the scores are not greater than 11
+              // Check if the scores are not greater than 10
               if (team1_score <=-1 || team2_score <= -1) {
                   alert("Scores cannot be lower than 0.");
                   return false;
               }
       
-              // Check if one of the scores is equal to 11
-              if (team1_score != 11 && team2_score != 11) {
-                  alert("One of the scores must be equal to 11.");
+              // Check if one of the scores is equal to 10
+              if (team1_score != 10 && team2_score != 10) {
+                  alert("One of the scores must be equal to 10.");
                   return false;
               }
       

@@ -8,7 +8,7 @@ print('teamAB =', teamAB)
 newrating = 1 + (a - teamAB)/1000
 print('newrating =', newrating)
 
-score_difference = abs(9-11)
+score_difference = abs(9-10)
 print('score_difference =', score_difference)
 
 
